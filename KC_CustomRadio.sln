@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KC_CustomRadio", "KC_CustomRadio\KC_CustomRadio.csproj", "{34B7546F-42AF-480E-A49B-4656C7715E36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34B7546F-42AF-480E-A49B-4656C7715E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B7546F-42AF-480E-A49B-4656C7715E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B7546F-42AF-480E-A49B-4656C7715E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B7546F-42AF-480E-A49B-4656C7715E36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
