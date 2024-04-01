@@ -33,8 +33,6 @@ public class CustomRadioController : MonoBehaviour
 
     private void Awake()
     {
-        gameObject.AddComponent<PhotonView>();
-            
         _radio = GetComponent<Radio>();
         _ui = RadioUI.CreateForRadio(this);
         
@@ -44,6 +42,13 @@ public class CustomRadioController : MonoBehaviour
 
         SongsDownloader.OnDownloadProgress += OnDownloadProgress;
         SongsDownloader.OnDownloadStatusChanged += OnDownloadStatusChanged;
+    }
+
+    private void OnDestroy()
+    {
+        SongsDownloader.OnDownloadProgress -= OnDownloadProgress;
+        SongsDownloader.OnDownloadStatusChanged -= OnDownloadStatusChanged;
+        Destroy(_ui.gameObject);
     }
 
     public void AddSongs(string url)

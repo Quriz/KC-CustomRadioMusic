@@ -11,7 +11,6 @@ public class RadioUI : MonoBehaviour
     private CustomRadioController _radioController;
 
     private TMP_InputField _inputField;
-    private ScrollRect _scrollRect;
     private Transform _content;
     private ToggleGroup _contentToggleGroup;
     private TextMeshProUGUI _loadingText;
@@ -31,12 +30,12 @@ public class RadioUI : MonoBehaviour
         _inputField = GetComponentInChildren<TMP_InputField>();
         _inputField.onEndEdit.AddListener(AddSongs);
 
-        _scrollRect = GetComponentInChildren<ScrollRect>();
+        var viewport = GetComponentInChildren<ScrollRect>().viewport;
         
-        _loadingText = _scrollRect.viewport.GetComponentInChildren<TextMeshProUGUI>();
+        _loadingText = viewport.GetComponentInChildren<TextMeshProUGUI>();
         _loadingText.gameObject.SetActive(false);
         
-        _contentToggleGroup = _scrollRect.GetComponentInChildren<ToggleGroup>();
+        _contentToggleGroup = viewport.GetComponentInChildren<ToggleGroup>();
         _content = _contentToggleGroup.transform;
         
         GetComponentInChildren<Button>().onClick.AddListener(Close);
