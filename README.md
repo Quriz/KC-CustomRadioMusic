@@ -1,5 +1,9 @@
 # Custom Radio Music Mod for Kebab Chefs
 
+This repository has been archived as I am no longer updating the mod. Feel free to fork it if you want to update it.
+
+---
+
 This is a mod for [Kebab Chefs](https://store.steampowered.com/app/1001270) that allows you to play custom music on the radio.
 
 ![banner](https://github.com/Quriz/KC-CustomRadioMusic/assets/75581292/13046ce2-7d41-47db-8749-5958a2095192)
